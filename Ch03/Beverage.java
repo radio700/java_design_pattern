@@ -1,11 +1,12 @@
 package Ch03;
+
 public abstract class Beverage {
-    String description = "";
+    String description = "Unknown Beverage";
 
-    public String getDescription(){
-        return description;
-    }
+	public String getDescription() {
+		return description;
+	}
 
-    public abstract double cost();
+	public abstract double cost();
     
 }

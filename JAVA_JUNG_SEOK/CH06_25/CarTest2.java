@@ -16,7 +16,7 @@ class Car{
     // }
 
     Car(){
-        this("white","auto",4);//main문에 써도 되는 것 디폴트 생성자[3] 를 세팅해 주는 것
+        this("white","auto",4);//Car(String color, String gearType, int door)를 호출하는 것
     }
 }
 

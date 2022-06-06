@@ -18,6 +18,7 @@ public class Car {
 class CarTest{
     public static void main(String[] args) {
         Car c1 = new Car("white", "auto", 4);
+        Car c2 = new Car();
         
     }
 }

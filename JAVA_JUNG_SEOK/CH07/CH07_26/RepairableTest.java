@@ -83,12 +83,14 @@ class SCV extends GroundUnit implements Machinery{
     }
 
     void Repair(Machinery Machine){
-        if(Machine instanceof Unit){
-            Unit u = (Unit) Machine;
+        Unit u = (Unit) Machine;
+        if(Machine instanceof Unit){//머시너리가 유닛의 인스턴스라면
             while(u.HP!=u.MAX_HP){
                 u.HP++;
             }
             System.out.println(u.toString()+"의 수리가 끝났습니다");
+        }else{
+            System.out.println(u.toString()+"기계 유닛이 아닙니다");
         }
     }
     public String toString(){
